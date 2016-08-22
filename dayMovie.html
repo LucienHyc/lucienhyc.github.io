@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie of the Day</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css" />
+</head>
+<body>
+<div id="navigation">
+    <ul class="nav-bar">
+        <img src="images\logo.png" style="margin-left:40px;" />
+        <li class="nav-item"><a href="index.html" class="nav-btn">HOME</a></li>
+        <li class="nav-item"><a href="#" class="nav-btn">MOVIE OF THE DAY</a></li>
+        <li class="nav-item"><a href="debate-zone.html" class="nav-btn">DEBATE ZONE</a></li>
+    </ul>
+    <a href="#" id="imdb"><img src="images/search.svg" id="search-btn"></a>
+    <div id="search">
+        <input type="search" id="search-box" />
+    </div>
+    <div id = "pro-btn"><a href="login.html" class="pro-btn">Sign in/up</a></div>
+</div>
+<div id="big-container">
+    <div id="trailer-top" class="embed-container2" style="margin-top:30px;">
+        <iframe src="https://player.vimeo.com/video/178993103" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p id="vimeo-title">A Trailer of Trailers<br>Lucien</p>
+    <div id="the-mod-container">
+        <p class="tra-title">The Movie of the Day</p>
+        <div id="the-mod">
+            <img id="the-mod-poster">
+            <div style="color:white; margin-top: -50px;">
+                <p>9,527 Votes</p>
+            </div>
+            <p id="the-mod-title"></p>
+            <p id="the-mod-description"></p>
+        </div>
+    </div>
+    <p class="tra-title" style="margin-top: 80px;margin-bottom: 10px;">What to Watch Today?</p>
+    <div id="mod-container">
+        <div id="mod-left">
+            <div id="0" class="mod-btn" onclick="getInfo(0)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Action</p>
+            </div>
+            <div id="1" class="mod-btn" onclick="getInfo(1)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Romance</p>
+            </div>
+            <div id="2" class="mod-btn" onclick="getInfo(2)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Comedy</p>
+            </div>
+            <div id="3" class="mod-btn" onclick="getInfo(3)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Horror</p>
+            </div>
+            <div id="4" class="mod-btn" onclick="getInfo(4)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Sci-fi</p>
+            </div>
+            <div id="5" class="mod-btn" onclick="getInfo(5)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Biographic</p>
+            </div>
+            <div id="6" class="mod-btn" onclick="getInfo(6)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Suspense</p>
+            </div>
+            <div id="7" class="mod-btn" onclick="getInfo(7)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Drama</p>
+            </div>
+            <div id="8" class="mod-btn" onclick="getInfo(8)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Animation</p>
+            </div>
+            <div id="9" class="mod-btn" onclick="getInfo(9)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Documentary</p>
+            </div>
+            <div id="10" class="mod-btn" onclick="getInfo(10)">
+                <p style="margin-right:30px;margin-top:0px;;margin-bottom:0px;padding-top:5px;">Adventure</p>
+            </div>
+        </div>
+        <div id="mod-right">
+            <div id="mod-right-top">
+                <div class="embed-container3" style="display: inline-block; width: 95%;">
+                    <iframe id="mod-trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="top-btn" class="mod-right-btn"></div>
+            </div>
+            <div id="mod-right-bottom">
+                <div id="mod-right-container">
+                    <img id="mod-poster">
+                    <p id="description">
+
+                    </p>
+                </div>
+                <div id="btm-btn" class="mod-right-btn"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <hr>
+    <p> MOVIEBOARD</p>
+</div>
+
+<script src="js/day-movie.js" ></script>
+</body>
+</html>

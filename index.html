@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movieboard</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css" />
+</head>
+<body>
+    <div id="navigation">
+        <ul class="nav-bar">
+            <img src="images\logo.png" style="margin-left:40px;" />
+            <li class="nav-item"><a href="#" class="nav-btn">HOME</a></li>
+            <li class="nav-item"><a href="dayMovie.html" class="nav-btn">MOVIE OF THE DAY</a></li>
+            <li class="nav-item"><a href="debate-zone.html" class="nav-btn">DEBATE ZONE</a></li>
+        </ul>
+        <a href="#" id="imdb"><img src="images/search.svg" id="search-btn"></a>
+        <div id="search">
+            <input type="search" id="search-box" />
+        </div>
+        <div id = "pro-btn"><a href="login.html" class="pro-btn">Sign in/up</a></div>
+    </div>
+    <div id="big-container">
+        <div id="logo"><img src="images\big-logo.png" style="width: 100%" /></div>
+        <div id="slides">
+            <div id="left-slides">
+                <div class="slides-btn" onmouseover="slideshover(0);">
+                </div>
+                <div class="slides-btn" onmouseover="slideshover(1);">
+                </div>
+                <div class="slides-btn" onmouseover="slideshover(2);">
+                </div>
+                <div class="slides-btn" onmouseover="slideshover(3);">
+                </div>
+            </div>
+            <div id="right-slides">
+                <p id="slide-name"></p>
+                <p id="box"></p>
+            </div>
+        </div>
+        <!--end of slides-->
+        <div id="trailers">
+            <div class="tra-title">
+                <p class="tra-title">User Favorite Trailers</p>
+            </div>
+            <div id="tra-container"></div>
+        </div>
+        <!--end of trailers-->
+        <div id="posters">
+            <div class="tra-title">
+                <p class="tra-title">User Favorite Posters</p>
+            </div>
+            <div id="pos-container">
+                <div id="pos-col-1" class="pos-col"></div>
+                <div id="pos-col-2" class="pos-col"></div>
+                <div id="pos-col-3" class="pos-col"></div>
+            </div>
+        </div>
+    </div>
+    <!--end of big container-->
+    <div id="player">
+        <div id="close-btn">&#10006;</div>
+        <div class="embed-container"><iframe id="trailer-player" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+
+    <div id="big-poster">
+        <div id="close-btn2">&#10006;</div>
+        <div id="big-poster-container"><p id="image-title"></p><img id="large"></div>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <p> MOVIEBOARD</p>
+    </div>
+
+
+    <script src="js/main.js" ></script>
+</body>
+</html>
