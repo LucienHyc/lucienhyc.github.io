@@ -379,7 +379,6 @@ body{
 .poster{
     background-size: 100%;
     width: 95%;
-    height: 95%;
     border: 3px solid white;
     margin-top: 8px;
     cursor: pointer;
